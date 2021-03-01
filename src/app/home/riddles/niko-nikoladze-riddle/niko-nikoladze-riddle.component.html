@@ -1,0 +1,41 @@
+<div class="nikoladze-riddle-component">
+  <h2 class="g-title">
+    <span class="primary-color">{{ "RIDDLES.FIRST" | translate }}</span>
+    <span class="braille-image-holder">
+      <img
+        src="../../../../assets/Images/ამოცანა-ბრაილი.png"
+        *ngIf="translateService.currentLang == 'ka'" />
+      <img
+        src="../../../../assets/Images/question-braille.png"
+        *ngIf="translateService.currentLang == 'en'"
+    /></span>
+
+    <img src="../../" alt="" />
+  </h2>
+  <div class="inputs-wrapper" [formGroup]="form">
+    <div class="g-custom-input">
+      <input formControlName="firstInput" type="text" maxlength="1" />
+    </div>
+    <div class="g-custom-input">
+      <input formControlName="secondInput" type="text" maxlength="1" />
+    </div>
+    <div class="g-custom-input">
+      <input formControlName="thirdInput" type="text" maxlength="1" />
+    </div>
+    <div class="g-custom-input">
+      <input formControlName="fourthInput" type="text" maxlength="1" />
+    </div>
+  </div>
+  <div class="btns-wrapper">
+    <button
+      class="g-loader-btn g-custom-btn primary"
+      [ngClass]="{ 'g-disabled': !form.valid }"
+      (click)="submitAnswer()"
+    >
+      <span *ngIf="!answerSubmitLoading">{{
+        "RIDDLES.ANSWER" | translate
+      }}</span>
+      <span *ngIf="answerSubmitLoading" class="g-inline-loader-yellow"> </span>
+    </button>
+  </div>
+</div>

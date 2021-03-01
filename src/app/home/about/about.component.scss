@@ -1,0 +1,144 @@
+@import "../../../assets/variables/colors.scss";
+.about-component {
+  height: 100%;
+  width: 100%;
+  .about-us {
+    margin-bottom: 4em;
+    .text {
+      display: flex;
+      justify-content: left;
+    }
+  }
+  .team {
+    .members {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin-bottom: 6em;
+      ul {
+        // padding: 0 6em;
+        flex-direction: row;
+        li {
+          margin-bottom: 1.5em;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .tsibakha-member {
+        color: $primary;
+        font-weight: 500;
+      }
+      .artist-member {
+        color: $secondary;
+        font-weight: 500;
+      }
+      .project-member {
+        color: #072d56;
+        font-weight: 500;
+      }
+    }
+
+    .partners {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 300px;
+      .number {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        color: $secondary;
+      }
+      .partner-names {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+        ol {
+          li {
+            margin: 2em;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            div {
+              margin-right: 1em;
+            }
+            span {
+              &:hover {
+                text-decoration: underline;
+                cursor: text;
+              }
+            }
+          }
+        }
+      }
+      .partner-images {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .puzzle {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          width: 50%;
+          top: 0;
+          .puzzle-piece {
+            position: relative;
+            .image {
+              top: 0;
+              position: absolute;
+              img {
+                width: 100%;
+                height: auto;
+                position: relative;
+              }
+              .number-absolute {
+                z-index: 3;
+                position: absolute;
+                font-weight: 500;
+                + img {
+                  position: relative;
+                }
+              }
+              .number-1 {
+                top: 0;
+                left: 0;
+              }
+              .number-2 {
+                top: 0;
+                right: 0;
+              }
+              .number-3 {
+                bottom: 0;
+                left: 0;
+              }
+              .number-4 {
+                bottom: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    // @media only screen and (max-width: 850px) {
+    //   .partners {
+    //     flex-direction: column;
+    //     .image-box {
+    //       width: 100%;
+    //     }
+    //   }
+    // }
+  }
+}

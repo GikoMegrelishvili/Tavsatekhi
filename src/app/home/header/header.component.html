@@ -1,0 +1,13 @@
+<div class="header-component">
+  <nav class="navigation">
+    <span class="logo">
+      <img src="../../../assets/Images/Logo - Black.png" alt="თავსატეხი"/>
+    </span>
+    <span class="g-menu-icon" (click)="toggleMenu()">
+      <img src="../../../assets/Images/menu.png" alt="მენიუ"/>
+    </span>
+    <menu class="menu" *ngIf="menuOpened">
+      <app-menu></app-menu>
+    </menu>
+  </nav>
+</div>

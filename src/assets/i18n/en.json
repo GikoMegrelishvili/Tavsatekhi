@@ -1,0 +1,116 @@
+{
+    "LANDING":{
+        "AUTHORIZATION":{
+            "CAPTAIN_MAIL":"Captain's mail",
+            "PASSWORD":"Password",
+            "LOGIN_BTN":"Log in",
+            "FORGOT_PASSWORD":"Forgot password?",
+            "DONT_HAVE_ACCOUNT":"Dont have an account?",
+            "REGISTER":"Register"
+        },
+        "REGISTRATION":{
+
+        }
+    },
+    "TUTORIAL":{
+        "TITLE":"Information about game",
+        "PLAY_GAME":"Play ‘Tavsatekhi’ Brainteaser Quest with us in the streets of Tbilisi",
+        "HOW_TO_PLAY":"How can I play?",
+        "GAME_INFO":"The Brainteaser Quest ‘Tavsatekhi’ combines street art and brain teasers and in the process lets visitors learn about Georgian historical figures and artists. After figuring out the puzzles hidden in street art and entering the correct answers on this website, you will learn interesting facts about figures in Georgian history. Anyone can go on the quest. All you need is a smartphone (or any other smart device) and access to the internet.",
+        "GAME_INSTRUCTION_TITLE":"Game instruction",
+        "GAME_INSTRUCTION_STEP_1":"Go to one of the street addresses on our website, where you can find street art by young Georgian artists (alternatively, you may come across these paintings while wandering around Tbilisi). There are five spots with street art associated with the quest in Tbilisi.",
+        "GAME_INSTRUCTION_STEP_2":"Each piece has a quest associated with it, which can be solved by looking at the details of the painting. Each work is also thematically linked to a famous Georgian public figure. However, the answer to the quest hidden in the art is not the name of the figure, but is rather a word, combination of letters, numbers, or another type of clue. Take a look at the street art and take a guess.",
+        "GAME_INSTRUCTION_STEP_3":"Scan the QR code in the corner of the street art and you will be redirected to the quest’s page. Enter the answer to the puzzle in the answer field. ",
+        "GAME_INSTRUCTION_STEP_4":"If the answer is correct, you will move to the next level and you will have the opportunity to access another puzzle/quest, again related to the same famous Georgian figure. To solve the puzzle, you might again find hints in the art.",
+        "GAME_INSTRUCTION_STEP_5":"By entering the correct answer to the second puzzle in the relevant field, you will find out more about the Georgian public figure linked with the piece",
+        "GAME_INSTRUCTION_STEP_6":"Go and visit the other addresses and solve the riddles by carefully observing the paintings. After you solve all the puzzles, you receive a score based on the time you spent on the quest",
+        "GAME_INSTRUCTION_STEP_7":"While the only prize is bragging rights, the quest also provides information about Georgian public figures from the past, who, we think, have made significant contributions to the country’s development.We hope you enjoy the quest while wandering the streets of Tbilisi!"
+    },
+    "RIDDLES":{
+        "STREET_ADDRESS_NIKO":"Mazniashvili 23",
+        "STREET_ADDRESS_SULKHAN_SABA_MACHABELI":"Dolidze st",
+        "STREET_ADDRESS_KAKABADZE":"Amagleba 5a",
+        "STREET_ADDRESS_MAZNIASHVILI":"Uknown",
+        "STREET_ADDRESS_BARATAIA":"Tsinamdzgvrishvili 119",
+        "FIRST":"First",
+        "SECOND":"Second",
+        "QUESTION":"Question",
+        "ANSWER":"Answer"
+    },
+    "PROFILE":{
+        "TITLE":"Profile",
+        "TEAM_NAME":"Team name",
+        "TIME_ELAPSED":"Time elapsed",
+        "RIDDLE_GUESSED":"Riddle guessed",
+        "RIDDLE_ONGOING":"Riddle ongoing"
+    },
+    "PEOPLE":{
+        "TITLE":"People",
+        "READ_MORE":"Read more",
+        "DAVID_KAKABADZE":{
+            "PROFFESION":"Painter",
+            "DESCRIPTION":"(August 20, 1889 – May 10, 1952) was one of the leading Georgian avant-garde painter, graphic artist and scenic designer. A multi-talent, he was also an art scholar and innovator in the field of cinematography as well as an amateur photographer. Kakabadze's works are notable for combining innovative interpretation of European 'Leftist' art with Georgian national traditions, on which he was an expert"
+        },
+        "GIORGI_MAZNIASHVILI":{
+            "PROFFESION":"General",
+            "DESCRIPTION":"(6 April 1870 – 16 December 1937) was a Georgian general and one of the most prominent military figures in the Democratic Republic of Georgia (1918–1921). During the service in the Russian army, he was also known by a Russian transliteration of his surname – Mazniev"
+        },
+        "RAMZE_BARATAIA":{
+            "PROFFESION":"Astronomer",
+            "DESCRIPTION":"დაიბადა მარტვილის რაიონის სოფ. ლეხაინდრაოში 1921წლის 25 ოქტომბერს. 1940  წელს დაამთავრა თბილისის პირველი საშუალო სკოლა და ჩაირიცხა თბილისის სახელმწიფო უნივერსიტეტის ფიზიკა-მათემატიკის ფაკულტეტზე"
+        },
+        "NIKO_NIKOLADZE":{
+            "PROFFESION":"Public figure",
+            "DESCRIPTION":" (27 September 1843 – 5 June 1928) was a notable Georgian writer, pro-Western enlightener, and public figure primarily known for his contributions to the development of Georgian liberal journalism and his involvement in various economic and social projects of that time"
+        },
+        "SULKHAN_SABA":{
+            "PROFFESION":"Writer/Public figure",
+            "DESCRIPTION":"Prince Sulkhan-Saba Orbeliani was a Georgian writer and diplomat. Orbeliani is noted in part due to his important role as an emissary of Georgia to France and the Vatican, where he vainly sought assistance on behalf of his beleaguered King Vakhtang V"
+        },
+        "IVANE_MACHABELI":{
+            "PROFFESION":"Writer/Translator",
+            "DESCRIPTION":"Prince Ivane Machabeli was a Georgian writer, translator, publicist, public figure, active member of the National-Liberation Movement, and a founder of the new Georgian literary language. He is also well known for his resonant translations of Shakespeare and for writing the opera of 'The Knight in the Panther's Skin'"
+        }
+    },
+    "ABOUT_US":{
+        "TITLE":"About project",
+        "ABOUT_PROJECT":"Our project combines street art and brain teasers, through which you will be able to get to know Georgian historical figures and artists in a fun way. After guessing the puzzles hidden in street art and entering the correct answers on this website, you will learn interesting facts about them and get hints to discover location of other similar street art paintings.This project is part of the international study ‘CHIEF’ on cultural education of young people, which is conducted in nine countries. More information about the CHIEF project can be found",
+        "HERE_LINK":"here",
+        "PROJECT_FINANCE_TEXT":"This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 770464",
+        "MEMBERS_TITLE":"Members",
+        "GAME_DESIGNER":"Game designer",
+        "PAINTER":"Painter",
+        "GIKO_MEGRELISHVILI":"Giko Megrelishvili",
+        "LEVAN_KUKHALEISHVILI":"Levan Kukhaleishvili",
+        "LEVAN_GELASHVILI":"Levan Gelashvili",
+        "SANDRO_PACHUASHVILI":"Sandro Pachuashvili",
+        "ANDRO_GURULI":"Andro Guruli",
+        "ILIA_DZADZAMIA":"Ilia Dzadzamia",
+        "GENA_TUSHISHVILI":"Gena Tushishvili",
+        "PARTNERS":"Project partners",
+        "EU":"Europian union",
+        "CRCC":"CRCC Georgia",
+        "TSIBAKHA":"Tsibakha - Board game club",
+        "CHIEF":"Project Chief"
+    },
+    "MENU":{
+        "HOME":"Home",
+        "RIDDLES":"Riddles",
+        "PROFILE":"Profile",
+        "PEOPLE":"People",
+        "ABOUT_US":"About project",
+        "SIGN_OUT":"Sign out"
+    },
+    "SHARED":{
+        "DAVID_KAKABADZE":"David Kakabadze",
+        "RAMZE_BARATAIA":"Ramze Barataia",
+        "IVANE_MACHABELI":"Ivane Machabeli",
+        "NIKO_NIKOLADZE":"Niko Nikoladze",
+        "SULKHAN_SABA":"Sulkhan - Saba Orbeliani",
+        "GIORGI_MAZNIASHVILI":"Giorgi Mazniashvili",
+        "UNDER_CONSTRUCTION":"Under Construction",
+        "UNDER_CONSTRUCTION_TEXT":"The website is under construction. Soon you will be able to play 'Tavsatekhi' here. Untill then you can read the instruction and information about the project",
+        "INSTRUCTION":"Instruction",
+        "ABOUT_PROJECT":"About project"
+    }
+}

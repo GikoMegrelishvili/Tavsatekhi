@@ -1,0 +1,65 @@
+@import "../../../assets/variables/colors.scss";
+.people-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .people-card-box {
+    width: 80%;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .card {
+      width: 30%;
+      height: 20em;
+    }
+    .people-info {
+      padding:2em;
+      width: 50%;
+      // text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .title-2 {
+        color: $primary;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+      }
+      .text {
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 6em;
+        line-height: 1.2em;
+        margin-bottom:2em;
+        font-size:1em;
+      }
+      a{
+          font-size:0.8em;
+          cursor: pointer;
+          color:$primary;
+          font-weight: 500;
+          &:hover{
+            text-decoration: underline;
+          }
+      }
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .people-card-box{
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .card{
+        width: 100%;
+      }
+      .people-info{
+        width: 100%;
+      }
+    }
+  }
+}

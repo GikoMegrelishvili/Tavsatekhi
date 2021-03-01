@@ -1,0 +1,47 @@
+.header-component {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      cursor: pointer;
+      img {
+        width: 12em;
+      }
+    }
+    .menu {
+      position: fixed;
+      width: 25%;
+      height: calc(100vh - 100px);
+      z-index: 10;
+      top: 0;
+      right: 0;
+      transition: width 1s;
+      animation: menu-click;
+      animation-duration: 0.5s;
+    }
+    @media only screen and (max-width: 850px) {
+      .menu {
+        width: 100%;
+        animation: menu-click-fullscreen;
+        animation-duration: 0.2s;
+      }
+    }
+  }
+}
+@keyframes menu-click {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+@keyframes menu-click-fullscreen {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }

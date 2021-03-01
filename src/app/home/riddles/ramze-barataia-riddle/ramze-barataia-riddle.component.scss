@@ -1,0 +1,69 @@
+@import "../../../../assets/variables/colors.scss";
+$mars-color: #934838;
+.barataia-riddle-component {
+  position: relative;
+  .primary-color {
+    color: $mars-color;
+  }
+  .inputs-wrapper {
+    display: flex;
+    justify-content: center;
+    .g-custom-input {
+      input {
+        font-size: 1.2em;
+        width: 12em;
+        height: 3em;
+        font-weight: 900;
+        color: $mars-color;
+        border: 2px solid $mars-color;
+        text-align: center;
+      }
+    }
+  }
+  .btns-wrapper {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    .g-custom-btn {
+      font-size: 1.2em;
+      background-color: $mars-color;
+      width: 12em;
+      height: 3em;
+    }
+  }
+
+  .rocket {
+    position: absolute;
+    cursor: pointer;
+    bottom: -120%;
+    left: calc(50% - 14em);
+    img{
+      width: 14em;
+      height: auto;
+    }
+  }
+  .launch {
+    animation: fly 10s ease-in;
+  }
+
+  @keyframes fly {
+    0% {
+      bottom: -120%;
+    }
+    60% {
+      bottom: 250%;
+    }
+    70% {
+      bottom: 250%;
+    }
+    80% {
+      bottom: 250%;
+    }
+    90% {
+      bottom: 250%;
+    }
+    100% {
+      bottom: 250%;
+    }
+  }
+}

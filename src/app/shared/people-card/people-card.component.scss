@@ -1,0 +1,37 @@
+@import "../../../assets/variables/colors.scss";
+.people-card-component {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 60px;
+    transform: translate3d(0px, -5px, 0px);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .image-box {
+      height: 80%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .heading {
+      background-color: $base;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 20%;
+      width: 100%;
+      h4 {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../assets/variables/colors.scss";
+
+.profile-component {
+  .team-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .info-box {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      margin:0 auto;
+      .icon {
+        img {
+          width: 3em;
+          height: auto;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        font-size:1.4em;
+        margin-left:2em;
+        text-align:left;
+        .heading {
+          color: rgb(175, 175, 175);
+        }
+        .information {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

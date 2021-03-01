@@ -1,0 +1,55 @@
+<div class="under-construction-component">
+  <div class="under-construction">
+    <div class="language-switcher" [ngClass]="{blur: instruction || aboutProject}">
+      <app-language-switcher> </app-language-switcher>
+    </div>
+
+    <div class="construction-container" [ngClass]="{blur: instruction || aboutProject}">
+      <div class="image-holder">
+        <img
+          class="logo"
+          src="../../../assets/Images/logo-white.png"
+          alt="Under Construction"
+        />
+        <img class="crane" src="../../../assets/Images/crane.svg" />
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="text" [ngClass]="{blur: instruction || aboutProject}">
+      {{ "SHARED.UNDER_CONSTRUCTION_TEXT" | translate }}
+      <div class="btn-wrapper">
+        <button class="g-custom-btn secondary" (click)="toggleInstruction()">
+          {{ "SHARED.INSTRUCTION" | translate }}
+        </button>
+        <button class="g-custom-btn primary" (click)="toggleAboutProject()">
+          {{ "SHARED.ABOUT_PROJECT" | translate }}
+        </button>
+      </div>
+    </div>
+    
+    <div class="background dialog-container" *ngIf="instruction || aboutProject">
+      <div
+        *ngIf="instruction"
+        class="instruction-container"
+        clickOutside
+        (clickOutside)="toggleInstruction(); $event?.stopPropagation()"
+      >
+        <app-instruction></app-instruction>
+        <div class="icon" (click)="toggleInstruction()"></div>
+      </div>
+      <div
+        *ngIf="aboutProject"
+        class="instruction-container"
+        clickOutside
+        (clickOutside)="toggleAboutProject(); $event?.stopPropagation()"
+      >
+        <app-about-project></app-about-project>
+        <div class="icon" (click)="toggleAboutProject()"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

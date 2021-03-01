@@ -1,0 +1,6 @@
+<div class="language-switcher" [ngClass]="{ka: !language,en:language}">
+    <label class="switch">
+      <input type="checkbox" [(ngModel)]="language" value="language" (change)="changeLanguage(language?'en':'ka')" />
+      <span class="slider round"></span>
+    </label>
+  </div>

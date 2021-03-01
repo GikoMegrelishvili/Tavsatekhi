@@ -1,0 +1,46 @@
+@import "../../../../assets/variables/colors.scss";
+.nikoladze-riddle-component {
+  .primary-color {
+    color: $primary;
+  }
+  .g-title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .braille-image-holder{
+    margin-left:1em;
+    img{
+      height: 3em;
+      width: auto;
+    }
+  }
+  .inputs-wrapper {
+    display: flex;
+    justify-content: center;
+    .g-custom-input {
+      margin:0 1em;
+      input {
+        font-size: 1.2em;
+        width: 3em;
+        height: 3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $secondary;
+        text-align: center;
+      }
+    }
+  }
+  .btns-wrapper {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    .g-custom-btn {
+      font-size: 1.2em;
+      background-color: $primary;
+      width: 12em;
+      height: 3em;
+    }
+  }
+}
