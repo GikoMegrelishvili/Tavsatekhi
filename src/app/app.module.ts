@@ -3,11 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
-import { AuthorizationComponent } from './landing/authorization/authorization.component';
-import { HomeComponent } from './home/home.component';
-import { RegistrationComponent } from './landing/registration/registration.component';
-import { HomeModule } from './home/home.module';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -18,22 +13,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { SharedModule } from './shared/shared.module';
-import { NikoNikoladzeRiddleComponent } from './home/riddles/niko-nikoladze-riddle/niko-nikoladze-riddle.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    AuthorizationComponent,
-    HomeComponent,
-    RegistrationComponent,
-    NikoNikoladzeRiddleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
