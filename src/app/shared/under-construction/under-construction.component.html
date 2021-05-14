@@ -1,10 +1,16 @@
 <div class="under-construction-component">
   <div class="under-construction">
-    <div class="language-switcher" [ngClass]="{blur: instruction || aboutProject}">
+    <div
+      class="language-switcher"
+      [ngClass]="{ blur: instruction || aboutProject }"
+    >
       <app-language-switcher> </app-language-switcher>
     </div>
 
-    <div class="construction-container" [ngClass]="{blur: instruction || aboutProject}">
+    <div
+      class="construction-container"
+      [ngClass]="{ blur: instruction || aboutProject }"
+    >
       <div class="image-holder">
         <img
           class="logo"
@@ -16,7 +22,7 @@
       </div>
     </div>
 
-    <div class="text" [ngClass]="{blur: instruction || aboutProject}">
+    <div class="text" [ngClass]="{ blur: instruction || aboutProject }">
       {{ "SHARED.UNDER_CONSTRUCTION_TEXT" | translate }}
       <div class="btn-wrapper">
         <button class="g-custom-btn secondary" (click)="toggleInstruction()">
@@ -27,8 +33,11 @@
         </button>
       </div>
     </div>
-    
-    <div class="background dialog-container" *ngIf="instruction || aboutProject">
+
+    <div
+      class="background dialog-container"
+      *ngIf="instruction || aboutProject"
+    >
       <div
         *ngIf="instruction"
         class="instruction-container"
@@ -49,7 +58,4 @@
       </div>
     </div>
   </div>
-
-
-
 </div>
