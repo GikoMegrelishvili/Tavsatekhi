@@ -2,6 +2,7 @@
 .about-component {
   height: 100%;
   width: 100%;
+  padding:30px 0;
   .about-us {
     margin-bottom: 4em;
     .text {
@@ -20,7 +21,13 @@
         // padding: 0 6em;
         flex-direction: row;
         li {
+          line-height: 1.5em;
           margin-bottom: 1.5em;
+          a{
+            text-decoration: none;
+            cursor: pointer;
+            color:inherit;
+          }
           &:hover {
             text-decoration: underline;
           }
@@ -66,9 +73,9 @@
         align-items: center;
         width: 50%;
         height: 100%;
-        ol {
+        ul {
           li {
-            margin: 2em 0;
+            margin: 2em 1em;
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -76,9 +83,14 @@
               margin-right: 1em;
             }
             span {
+
               &:hover {
                 text-decoration: underline;
                 cursor: text;
+              }
+              a{
+                cursor: pointer;
+                color:$primary;
               }
             }
           }
