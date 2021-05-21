@@ -10,9 +10,6 @@
     <li [routerLink]="['/riddles']" routerLinkActive="router-link-active">
       <span class="circle"></span>{{ "MENU.RIDDLES" | translate }}
     </li>
-    <li [routerLink]="['/profile']" routerLinkActive="router-link-active">
-      <span class="circle"></span>{{ "MENU.PROFILE" | translate }}
-    </li>
     <li [routerLink]="['/people']" routerLinkActive="router-link-active">
       <span class="circle"></span>{{ "MENU.PEOPLE" | translate }}
     </li>
@@ -22,7 +19,7 @@
     <li class="language-switcher">
       <app-language-switcher> </app-language-switcher>
     </li>
-    
+
     <li
       class="sign-out"
       tooltip="{{ 'MENU.SIGN_OUT' | translate }}"

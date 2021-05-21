@@ -15,7 +15,6 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentLanguage = this.translateService.currentLang;
-    console.log(this.currentLanguage);
     this.initializeForm();
   }
   private initializeForm(): void {
