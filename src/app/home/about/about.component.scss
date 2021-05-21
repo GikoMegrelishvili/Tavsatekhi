@@ -13,7 +13,7 @@
     .members {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       align-items: flex-start;
       margin-bottom: 6em;
       ul {
@@ -25,6 +25,9 @@
             text-decoration: underline;
           }
         }
+      }
+      .artist-members{
+        margin-right:8em;
       }
       .tsibakha-member {
         color: $primary;
@@ -43,10 +46,10 @@
     .partners {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       width: 100%;
-      height: 300px;
+      // height: 300px;
       .number {
         width: 30px;
         height: 30px;
@@ -59,13 +62,13 @@
       }
       .partner-names {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
         width: 50%;
         height: 100%;
         ol {
           li {
-            margin: 2em;
+            margin: 2em 0;
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -132,13 +135,36 @@
         }
       }
     }
-    // @media only screen and (max-width: 850px) {
-    //   .partners {
-    //     flex-direction: column;
-    //     .image-box {
-    //       width: 100%;
-    //     }
-    //   }
-    // }
+    @media only screen and (max-width: 1000px) {
+      .members {
+        flex-direction: column;
+      }
+      .partners {
+        flex-direction: column;
+      }
+      .partner-images{
+        width: 100% !important;
+        margin-top:40px;
+        .puzzle{
+          width: 100% !important;
+        }
+      }
+      .number{
+        margin-bottom:10px;
+      }
+      .partner-names {
+        width: 100% !important;
+        ol {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          li{
+            align-items:flex-start !important;
+            flex-direction: column  !important;
+          }
+        }
+      }
+    }
   }
 }

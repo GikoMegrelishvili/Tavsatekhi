@@ -17,12 +17,20 @@
       margin-bottom: 4em;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding: 2em;
       border: 1px solid $primary;
       border-radius: 25px;
-      position:relative;
+      position: relative;
+      p{
+        width: 80%;
+      }
+      .svg {
+        width: 75px;
+        height: auto;
+      }
+
       .step {
         z-index: 3;
         font-size: 1.5em;
@@ -43,6 +51,9 @@
     @media only screen and (max-width: 600px) {
       .instruction-box {
         flex-direction: column;
+        .svg{
+          margin-top:15px;
+        }
       }
     }
   }

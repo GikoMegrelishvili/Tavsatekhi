@@ -21,10 +21,8 @@
         "GAME_INSTRUCTION_STEP_1":"Go to one of the street addresses on our website, where you can find street art by young Georgian artists (alternatively, you may come across these paintings while wandering around Tbilisi). There are five spots with street art associated with the quest in Tbilisi.",
         "GAME_INSTRUCTION_STEP_2":"Each piece has a quest associated with it, which can be solved by looking at the details of the painting. Each work is also thematically linked to a famous Georgian public figure. However, the answer to the quest hidden in the art is not the name of the figure, but is rather a word, combination of letters, numbers, or another type of clue. Take a look at the street art and take a guess.",
         "GAME_INSTRUCTION_STEP_3":"Scan the QR code in the corner of the street art and you will be redirected to the quest’s page. Enter the answer to the puzzle in the answer field. ",
-        "GAME_INSTRUCTION_STEP_4":"If the answer is correct, you will move to the next level and you will have the opportunity to access another puzzle/quest, again related to the same famous Georgian figure. To solve the puzzle, you might again find hints in the art.",
-        "GAME_INSTRUCTION_STEP_5":"By entering the correct answer to the second puzzle in the relevant field, you will find out more about the Georgian public figure linked with the piece",
-        "GAME_INSTRUCTION_STEP_6":"Go and visit the other addresses and solve the riddles by carefully observing the paintings. After you solve all the puzzles, you receive a score based on the time you spent on the quest",
-        "GAME_INSTRUCTION_STEP_7":"While the only prize is bragging rights, the quest also provides information about Georgian public figures from the past, who, we think, have made significant contributions to the country’s development.We hope you enjoy the quest while wandering the streets of Tbilisi!"
+        "GAME_INSTRUCTION_STEP_4":"By entering the correct answer to the puzzle in the relevant field, you will find out more about the Georgian public figure linked with the piece",
+        "GAME_INSTRUCTION_STEP_5":"Go and visit the other addresses and solve the riddles by carefully observing the paintings. While the only prize is bragging rights, the quest also provides information about Georgian public figures from the past, who, we think, have made significant contributions to the country’s development.We hope you enjoy the quest while wandering the streets of Tbilisi!"
     },
     "RIDDLES":{
         "STREET_ADDRESS_NIKO":"Mazniashvili 23",
