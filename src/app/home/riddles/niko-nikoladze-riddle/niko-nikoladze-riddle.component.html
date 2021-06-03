@@ -9,23 +9,38 @@
         src="../../../../assets/Images/question-braille.png"
         *ngIf="translateService.currentLang == 'en'"
     /></span>
-
-    <img src="../../" alt="" />
   </h2>
   <div class="inputs-wrapper" [formGroup]="form">
     <div class="g-custom-input">
-      <input formControlName="firstInput" type="text" maxlength="1" />
+      <input
+        formControlName="firstInput"
+        type="text"
+        maxlength="1"
+      />
     </div>
     <div class="g-custom-input">
-      <input formControlName="secondInput" type="text" maxlength="1" />
+      <input
+        formControlName="secondInput"
+        type="text"
+        maxlength="1"
+      />
     </div>
     <div class="g-custom-input">
-      <input formControlName="thirdInput" type="text" maxlength="1" />
+      <input
+        formControlName="thirdInput"
+        type="text"
+        maxlength="1"
+      />
     </div>
     <div class="g-custom-input">
-      <input formControlName="fourthInput" type="text" maxlength="1" />
+      <input
+        formControlName="fourthInput"
+        type="text"
+        maxlength="1"
+      />
     </div>
   </div>
+
   <div class="btns-wrapper">
     <button
       class="g-loader-btn g-custom-btn primary"

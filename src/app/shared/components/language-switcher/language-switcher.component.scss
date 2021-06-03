@@ -1,9 +1,9 @@
-@import "../../../assets/variables/colors.scss";
+@import "../../../../assets/variables/colors.scss";
 .en .slider:before {
-  background-image: url("../../../assets/Images/united-kingdom.svg");
+  background-image: url("../../../../assets/Images/united-kingdom.svg");
 }
 .ka .slider:before {
-  background-image: url("../../../assets/Images/georgia.svg");
+  background-image: url("../../../../assets/Images/georgia.svg");
 }
 .language-switcher {
   .switch {

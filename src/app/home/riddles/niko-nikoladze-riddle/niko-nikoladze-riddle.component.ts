@@ -1,6 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+import { PeopleEnum } from 'src/app/shared/models/enums';
+import { AnswerService } from 'src/app/shared/services/answer.service';
+import { CryptoService } from 'src/app/shared/services/crypto.service';
+import { DialogService } from 'src/app/shared/services/dialog.service';
 
 @Component({
   selector: 'app-niko-nikoladze-riddle',
@@ -11,7 +16,13 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
   public answerSubmitLoading: boolean = false;
   public form: FormGroup;
   public currentLanguage;
-  constructor(private formBuilder: FormBuilder,public translateService:TranslateService) {}
+  private subs = new Subscription();
+  constructor(
+    private formBuilder: FormBuilder,
+    public translateService: TranslateService,
+    private answerService: AnswerService,
+    private dialogService: DialogService
+  ) {}
 
   ngOnInit(): void {
     this.currentLanguage = this.translateService.currentLang;
@@ -39,6 +50,25 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
   }
   public submitAnswer(): void {
     this.answerSubmitLoading = true;
+    const userAnswer = this.getAnswerFromForm();
+    const isAnswerTrue = this.answerService.isNikoladzeAnswerTrue(userAnswer);
+    this.handleAnswerDialog(isAnswerTrue);
+    this.answerSubmitLoading = false;
   }
 
+  private handleAnswerDialog(isAnswerTrue):void{
+    if(isAnswerTrue){
+      this.dialogService.openDialogAnswerCorrect(PeopleEnum.NIKOLADZE);
+    }else{
+      this.dialogService.openDialogAnswerIncorrect();
+    }
+  }
+
+  private getAnswerFromForm(): string {
+    let answer: string = '';
+    Object.keys(this.form.controls).forEach((key) => {
+      answer = answer + this.form.controls[key].value;
+    });
+    return answer.toUpperCase();
+  }
 }

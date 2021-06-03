@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PeopleCardComponent } from './people-card/people-card.component';
+import { PeopleCardComponent } from './components/people-card/people-card.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageSwitcherComponent } from './language-switcher/language-switcher.component';
+import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { InstructionComponent } from './instruction/instruction.component';
 import { ClickOutsideDirective } from './click-outside.directive';
-import { AboutProjectComponent } from './about-project/about-project.component';
+import { AnswerDialogComponent } from './components/answer-dialog/answer-dialog.component';
 
 @NgModule({
-  declarations: [PeopleCardComponent, LanguageSwitcherComponent, InstructionComponent,ClickOutsideDirective, AboutProjectComponent],
+  declarations: [PeopleCardComponent, LanguageSwitcherComponent,ClickOutsideDirective, AnswerDialogComponent],
   imports: [CommonModule,FormsModule,ReactiveFormsModule,FormsModule,TranslateModule,RouterModule],
-  exports: [PeopleCardComponent, TranslateModule,LanguageSwitcherComponent],
+  exports: [PeopleCardComponent, TranslateModule,LanguageSwitcherComponent,AnswerDialogComponent],
 })
 export class SharedModule {}

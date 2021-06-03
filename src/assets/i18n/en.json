@@ -25,11 +25,11 @@
         "GAME_INSTRUCTION_STEP_5":"Go and visit the other addresses and solve the riddles by carefully observing the paintings. While the only prize is bragging rights, the quest also provides information about Georgian public figures from the past, who, we think, have made significant contributions to the country’s development.We hope you enjoy the quest while wandering the streets of Tbilisi!"
     },
     "RIDDLES":{
-        "STREET_ADDRESS_NIKO":"Mazniashvili 23",
-        "STREET_ADDRESS_SULKHAN_SABA_MACHABELI":"Dolidze st",
-        "STREET_ADDRESS_KAKABADZE":"Amagleba 5a",
-        "STREET_ADDRESS_MAZNIASHVILI":"Uknown",
-        "STREET_ADDRESS_BARATAIA":"Tsinamdzgvrishvili 119",
+        "STREET_ADDRESS_NIKO":"Mazniashvili st.23",
+        "STREET_ADDRESS_SULKHAN_SABA_MACHABELI":"G.Dolidze st.18",
+        "STREET_ADDRESS_KAKABADZE":"Amagleba st.25",
+        "STREET_ADDRESS_MAZNIASHVILI":"Chonqadze st.5",
+        "STREET_ADDRESS_BARATAIA":"Tsinamdzgvrishvili st.119",
         "FIRST":"First",
         "SECOND":"Second",
         "QUESTION":"Question",
@@ -71,7 +71,7 @@
         }
     },
     "ABOUT_US":{
-      "TITLE":"About project",
+      "TITLE":"About the project",
       "ABOUT_PROJECT":"Our project combines street art and brain teasers, through which you will be able to get to know Georgian historical figures and artists in a fun way. After guessing the puzzles hidden in street art and entering the correct answers on this website, you will learn interesting facts about them and get hints to discover location of other similar street art paintings",
       "HERE_LINK":"here",
       "PROJECT_FINANCE_TEXT":"This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 770464",
@@ -91,7 +91,7 @@
       "DAVID_KAKABADZE":"painted street art about David Kakabadze",
       "RAMZE_BARATAIA_NIKO_NIKOLADZE":"painted street art about Ramze Barataia and Niko Nikoladze",
       "IVANE_MACHABELI_SULKHAN_SABA":"painted street art about Ivane Machabeli/Sulkhan - Saba Orbeliani",
-      "GIORGI_MAZNIASHVILI":"painted street art about David Kakabadze",
+      "GIORGI_MAZNIASHVILI":"painted street art about Giorgi Mazniashvili",
       "PARTNERS":"Project partners",
       "TSIBAKHA_LINK":"Project carried out by Tsibakha - Board Game Club",
       "STREET_ARTISTS":"and young Georgian street artists",
@@ -119,6 +119,8 @@
         "UNDER_CONSTRUCTION":"Under Construction",
         "UNDER_CONSTRUCTION_TEXT":"The website is under construction. Soon you will be able to play 'Tavsatekhi' here. Untill then you can read the instruction and information about the project",
         "INSTRUCTION":"Instruction",
-        "ABOUT_PROJECT":"About project"
+        "ABOUT_PROJECT":"About project",
+        "ANSWER_CORRECT":"Answer correct",
+        "ANSWER_INCORRECT":"პასუხი არასწორია"
     }
 }

@@ -89,20 +89,34 @@
         <ul>
           <li>
             <span>
-              <a href="https://www.facebook.com/TsibakhaGameClub/" target="_blank">{{ "ABOUT_US.TSIBAKHA_LINK" | translate }}</a>
+              <a
+                href="https://www.facebook.com/TsibakhaGameClub/"
+                target="_blank"
+                >{{ "ABOUT_US.TSIBAKHA_LINK" | translate }}</a
+              >
               {{ "ABOUT_US.STREET_ARTISTS" | translate }}</span
             >
           </li>
           <li>
-            <span>
-              <a href="https://crrc.ge/en/" target="_blank">{{ "ABOUT_US.CRCC_LINK" | translate }}</a
-              >{{ "ABOUT_US.CRCC" | translate }}
+            <span *ngIf="currentLanguage == 'ka'">
+              <a href="https://crrc.ge/en/" target="_blank">{{
+                "ABOUT_US.CRCC_LINK" | translate
+              }}</a>
+              {{ "ABOUT_US.CRCC" | translate }}
+            </span>
+            <span *ngIf="currentLanguage == 'en'">
+              {{ "ABOUT_US.CRCC" | translate }}
+              <a href="https://crrc.ge/en/" target="_blank">{{
+                "ABOUT_US.CRCC_LINK" | translate
+              }}</a>
             </span>
           </li>
           <li>
             <span>
               {{ "ABOUT_US.FINANCED" | translate }}
-              <a href="http://chiefprojecteu.com/" target="_blank">{{ "ABOUT_US.CHIEF_LINK" | translate }}</a>
+              <a href="http://chiefprojecteu.com/" target="_blank">{{
+                "ABOUT_US.CHIEF_LINK" | translate
+              }}</a>
             </span>
           </li>
           <li>

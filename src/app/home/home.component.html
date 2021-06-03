@@ -1,5 +1,5 @@
 <div class="home-component">
-  <div class="background" *ngIf="menuOpened"></div>
+  <div class="background" *ngIf="menuOpened || isAnswerDialogOpen"></div>
   <header>
     <app-header></app-header>
   </header>
@@ -10,3 +10,4 @@
     <app-footer></app-footer>
   </footer>
 </div>
+<app-answer-dialog *ngIf="isAnswerDialogOpen"></app-answer-dialog>

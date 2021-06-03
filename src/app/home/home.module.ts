@@ -17,6 +17,7 @@ import { GiorgiMazniashviliRiddleComponent } from './riddles/giorgi-mazniashvili
 import { RamzeBarataiaRiddleComponent } from './riddles/ramze-barataia-riddle/ramze-barataia-riddle.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NikoNikoladzeRiddleComponent } from './riddles/niko-nikoladze-riddle/niko-nikoladze-riddle.component';
+import { ReadMoreComponent } from './people/read-more/read-more.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NikoNikoladzeRiddleComponent } from './riddles/niko-nikoladze-riddle/ni
     DavitKakabadzeRiddleComponent,
     GiorgiMazniashviliRiddleComponent,
     RamzeBarataiaRiddleComponent,
-    NikoNikoladzeRiddleComponent
+    NikoNikoladzeRiddleComponent,
+    ReadMoreComponent
   ],
   imports: [CommonModule, RouterModule,SharedModule,TooltipModule,ReactiveFormsModule,FormsModule,TranslateModule],
   exports: [HeaderComponent, FooterComponent, MenuComponent, AboutComponent,TutorialComponent],

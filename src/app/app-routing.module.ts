@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './home/about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PeopleComponent } from './home/people/people.component';
+import { ReadMoreComponent } from './home/people/read-more/read-more.component';
 import { DavitKakabadzeRiddleComponent } from './home/riddles/davit-kakabadze-riddle/davit-kakabadze-riddle.component';
 import { GiorgiMazniashviliRiddleComponent } from './home/riddles/giorgi-mazniashvili-riddle/giorgi-mazniashvili-riddle.component';
 import { NikoNikoladzeRiddleComponent } from './home/riddles/niko-nikoladze-riddle/niko-nikoladze-riddle.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
         component: RamzeBarataiaRiddleComponent,
       },
       { path: 'people', component: PeopleComponent },
+      { path: 'read-more', component: ReadMoreComponent },
     ],
   },
 ];
