@@ -3,6 +3,15 @@
     <span class="primary-color">{{ "RIDDLES.FIRST" | translate }}</span>
     {{ "RIDDLES.QUESTION" | translate }}
   </h2>
+  <div class="objects">
+    <div class="object-1"></div>
+    <div class="not-equal">≠</div>
+    <div class="object-2"></div>
+    <div>.</div>
+    <div class="object-3">
+    </div>
+    <div>?</div>
+  </div>
   <div class="inputs-wrapper" [formGroup]="form">
     <div class="g-custom-input">
       <input formControlName="answer" type="text" />
@@ -21,13 +30,11 @@
     </button>
   </div>
 
-  <img
+  <!-- <img
     id="rocket"
     (click)="launchRocket()"
     *ngIf="rocketShow"
     class="rocket"
     src="../../../../assets/Images/spaceship.png"
-  />
-
+  /> -->
 </div>
-

@@ -1,0 +1,141 @@
+@import "../../../../assets/variables/colors.scss";
+
+$yellow: rgb(243, 240, 86);
+$pink: rgb(255, 176, 189);
+$blue: rgb(67, 55, 182);
+$white: rgb(214, 214, 214);
+
+.kakabadze-component {
+  .primary-color {
+    color: $primary;
+  }
+  .g-title {
+    margin: 0;
+  }
+  .objects {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .options {
+    border-top: 2px dotted $primary;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem 0;
+      .object {
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .object {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    font-size: 3rem;
+    &.square {
+      background-color: $yellow;
+      color: $blue;
+    }
+    &.painting {
+      background-image: url("../../../../assets/Images/kakabadze.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    &.hexagon {
+      position: relative;
+      width: 70px;
+      height: 40.41px;
+      background-color: $yellow;
+      margin: 20.21px 0;
+      color: $pink;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+      }
+      &:before {
+        bottom: 100%;
+        border-bottom: 20.21px solid $yellow;
+      }
+      &:after {
+        top: 100%;
+        width: 0;
+        border-top: 20.21px solid $yellow;
+      }
+    }
+    &.triangle {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 35px 70px 35px;
+      border-color: transparent transparent $white transparent;
+    }
+    &.question-mark {
+      color: $primary;
+      font-size: 70px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+    &.transparent {
+      background-color: $white;
+      &.hexagon {
+        &:after {
+          border-top: 20.21px solid $white;
+        }
+        &:before {
+          border-bottom: 20.21px solid $white;
+        }
+      }
+    }
+    &.backgroundYellow {
+      background-color: $yellow;
+    }
+    &.backgroundPink {
+      background-color: $pink;
+    }
+    &.backgroundBlue {
+      background-color: $blue;
+    }
+    &.colorYellow {
+      color: $yellow;
+    }
+    &.colorPink {
+      color: $pink;
+    }
+    &.colorBlue {
+      color: $blue;
+    }
+  }
+  .btns-wrapper {
+    width: 100%;
+    text-align: center;
+    button {
+      height: 70px;
+      width: 350px;
+    }
+  }
+}

@@ -13,9 +13,10 @@
     background-color: white;
     border-radius: 12px;
     width: max-content;
+    max-width: 50%;
     height: auto;
     padding: 32px;
-    width: 20%;
+    margin:2rem;
     position: relative;
     .close {
       cursor:pointer;

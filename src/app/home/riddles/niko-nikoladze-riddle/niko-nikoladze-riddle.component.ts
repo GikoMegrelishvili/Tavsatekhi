@@ -4,7 +4,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { PeopleEnum } from 'src/app/shared/models/enums';
 import { AnswerService } from 'src/app/shared/services/answer.service';
-import { CryptoService } from 'src/app/shared/services/crypto.service';
 import { DialogService } from 'src/app/shared/services/dialog.service';
 
 @Component({
@@ -16,7 +15,6 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
   public answerSubmitLoading: boolean = false;
   public form: FormGroup;
   public currentLanguage;
-  private subs = new Subscription();
   constructor(
     private formBuilder: FormBuilder,
     public translateService: TranslateService,

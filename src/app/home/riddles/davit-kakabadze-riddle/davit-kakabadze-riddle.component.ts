@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-davit-kakabadze-riddle',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DavitKakabadzeRiddleComponent implements OnInit {
 
-  constructor() { }
+  public form:FormGroup;
+
+  constructor(private _fb:FormBuilder) { }
 
   ngOnInit(): void {
+    this.initForm();
+  }
+
+  public initForm():void{
+    this.form = this._fb.group({
+      shape:["",Validators.required],
+      number:["",Validators.required],
+      color:["",Validators.required],
+      background:["",Validators.required]
+    });
   }
 
 }
