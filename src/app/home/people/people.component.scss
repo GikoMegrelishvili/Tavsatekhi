@@ -13,51 +13,54 @@
     justify-content: space-evenly;
     .card {
       width: 30%;
-      height: 20em;
+      height: 20rem;
     }
     .people-info {
-      padding:2em;
+      padding: 2rem;
       width: 50%;
-      // text-align: left;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       .title-2 {
         color: $primary;
-        font-size: 1.5em;
-        margin-bottom: 2em;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
       }
       .text {
         display: block;
         text-overflow: ellipsis;
         word-wrap: break-word;
         overflow: hidden;
-        max-height: 6em;
-        line-height: 1.2em;
-        margin-bottom:2em;
-        font-size:1em;
+        max-height: 6rem;
+        line-height: 1.2rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
       }
-      a{
-          font-size:0.8em;
-          cursor: pointer;
-          color:$primary;
-          font-weight: 500;
-          &:hover{
-            text-decoration: underline;
-          }
+      a {
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        padding:0.5rem 1rem;
+        background-color:$base;
+        text-decoration: none;
+        border-radius:8px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
   @media only screen and (max-width: 800px) {
-    .people-card-box{
+    .people-card-box {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      .card{
+      .card {
         width: 100%;
       }
-      .people-info{
+      .people-info {
         width: 100%;
       }
     }

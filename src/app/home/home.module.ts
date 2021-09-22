@@ -17,7 +17,12 @@ import { GiorgiMazniashviliRiddleComponent } from './riddles/giorgi-mazniashvili
 import { RamzeBarataiaRiddleComponent } from './riddles/ramze-barataia-riddle/ramze-barataia-riddle.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NikoNikoladzeRiddleComponent } from './riddles/niko-nikoladze-riddle/niko-nikoladze-riddle.component';
-import { ReadMoreComponent } from './people/read-more/read-more.component';
+import { DavitKakabadzeInfoComponent } from './people/davit-kakabadze-info/davit-kakabadze-info.component';
+import { GiorgiMazniashviliInfoComponent } from './people/giorgi-mazniashvili-info/giorgi-mazniashvili-info.component';
+import { NikoNikoladzeInfoComponent } from './people/niko-nikoladze-info/niko-nikoladze-info.component';
+import { RamzeBarataiaInfoComponent } from './people/ramze-barataia-info/ramze-barataia-info.component';
+import { SulkhanSabaInfoComponent } from './people/sulkhan-saba-info/sulkhan-saba-info.component';
+import { IvaneMachabeliInfoComponent } from './people/ivane-machabeli-info/ivane-machabeli-info.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { ReadMoreComponent } from './people/read-more/read-more.component';
     GiorgiMazniashviliRiddleComponent,
     RamzeBarataiaRiddleComponent,
     NikoNikoladzeRiddleComponent,
-    ReadMoreComponent
+    DavitKakabadzeInfoComponent,
+    GiorgiMazniashviliInfoComponent,
+    NikoNikoladzeInfoComponent,
+    RamzeBarataiaInfoComponent,
+    SulkhanSabaInfoComponent,
+    IvaneMachabeliInfoComponent
   ],
   imports: [CommonModule, RouterModule,SharedModule,TooltipModule,ReactiveFormsModule,FormsModule,TranslateModule],
   exports: [HeaderComponent, FooterComponent, MenuComponent, AboutComponent,TutorialComponent],

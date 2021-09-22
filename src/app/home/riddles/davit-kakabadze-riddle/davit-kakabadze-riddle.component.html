@@ -4,61 +4,97 @@
     {{ "RIDDLES.QUESTION" | translate }}
   </h2>
   <div class="objects">
-    <div class="object square">
-      1
-    </div>
-    <div class="object painting">
-    </div>
-    <div class="object hexagon">
-      34
-    </div>
-    <div class="object question-mark">
-      ?
-    </div>
+    <div class="object hexagon yellow">1</div>
+    <div class="object painting"></div>
+    <div class="object question-mark">?</div>
   </div>
   <div class="options">
     <div class="row">
-      <div class="object hexagon transparent">
+      <div [ngClass]="{ choosen: form.controls.shape.value === 1 }">
+        <div
+          (click)="chooseShape(1)"
+          class="object hexagon transparent"
+        ></div>
       </div>
-      <div class="object triangle">
-      </div>
-      <div class="object square transparent">
-      </div>
+
+      <div
+        [ngClass]="{ choosen: form.controls.shape.value === 2 }"
+        (click)="chooseShape(2)"
+        class="object triangle"
+      ></div>
+      <div
+        [ngClass]="{ choosen: form.controls.shape.value === 3 }"
+        (click)="chooseShape(3)"
+        class="object square transparent"
+      ></div>
     </div>
     <div class="row">
-      <div class="object">
+      <div
+        [ngClass]="{ choosen: form.controls.number.value === 1 }"
+        (click)="chooseNumber(1)"
+        class="object"
+      >
         55
       </div>
-      <div class="object">
+      <div
+        [ngClass]="{ choosen: form.controls.number.value === 2 }"
+        (click)="chooseNumber(2)"
+        class="object"
+      >
         87
       </div>
-      <div class="object">
+      <div
+        [ngClass]="{ choosen: form.controls.number.value === 3 }"
+        (click)="chooseNumber(3)"
+        class="object"
+      >
         34
       </div>
     </div>
     <div class="row">
-      <div class="object backgroundYellow">
-      </div>
-      <div class="object backgroundPink">
-      </div>
-      <div class="object backgroundBlue">
-      </div>
+      <div
+        [ngClass]="{ choosen: form.controls.background.value === 1 }"
+        (click)="chooseBackground(1)"
+        class="object backgroundYellow"
+      ></div>
+      <div
+        [ngClass]="{ choosen: form.controls.background.value === 2 }"
+        (click)="chooseBackground(2)"
+        class="object backgroundPink"
+      ></div>
+      <div
+        [ngClass]="{ choosen: form.controls.background.value === 3 }"
+        (click)="chooseBackground(3)"
+        class="object backgroundBlue"
+      ></div>
     </div>
     <div class="row">
-      <div class="object transparent colorYellow">
+      <div
+        [ngClass]="{ choosen: form.controls.color.value === 1 }"
+        (click)="chooseColor(1)"
+        class="object transparent colorYellow"
+      >
         ?
       </div>
-      <div class="object transparent colorPink">
+      <div
+        [ngClass]="{ choosen: form.controls.color.value === 2 }"
+        (click)="chooseColor(2)"
+        class="object transparent colorPink"
+      >
         ?
       </div>
-      <div class="object transparent colorBlue">
+      <div
+        [ngClass]="{ choosen: form.controls.color.value === 3 }"
+        (click)="chooseColor(3)"
+        class="object transparent colorBlue"
+      >
         ?
       </div>
     </div>
   </div>
   <div class="btns-wrapper">
-    <button class="g-custom-btn primary">
-      {{"RIDDLES.ANSWER" | translate}}
+    <button (click)="submitAnswer()" [disabled]="form.invalid" class="g-custom-btn primary">
+      {{ "RIDDLES.ANSWER" | translate }}
     </button>
   </div>
 </div>

@@ -10,10 +10,9 @@ export class DialogService {
   public isAnswerCorrect:BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public person:BehaviorSubject<PeopleEnum> = new BehaviorSubject<PeopleEnum>(null);
 
-  public openDialogAnswerCorrect(pageToNavigateTo:PeopleEnum): void {
+  public openDialogAnswerCorrect(): void {
     this.isAnswerDialogOpen.next(true);
     this.isAnswerCorrect.next(true);
-    this.person.next(pageToNavigateTo);
   }
   public openDialogAnswerIncorrect(): void {
     this.isAnswerDialogOpen.next(true);

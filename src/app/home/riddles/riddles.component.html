@@ -1,62 +1,70 @@
 <div class="riddles-component">
-  <h2 class="g-title">ამოცანები</h2>
+  <h2 class="g-title">{{'RIDDLES.TITLE' | translate}}</h2>
 
   <div class="riddles">
-
-    <!-- (click)="navigateToMap('https://goo.gl/maps/JuwFSuyHv4S9axp36')" -->
-    <div class="riddle-card" [routerLink]="['/riddles/dmxqRsxlf87Sgelash5']">
-      <div class="question-mark">?</div>
+    <div
+      class="riddle-card"
+      (click)="navigate(PeopleEnum.NIKOLADZE,'https://goo.gl/maps/JuwFSuyHv4S9axp36')"
+    >
+      <div class="question-mark">1</div>
       <div class="check-mark" *ngIf="false"></div>
       <app-people-card
-        image="../../../assets/Images/street.png"
-        text="{{'RIDDLES.STREET_ADDRESS_NIKO'|translate}}"
+        image="../../../assets/Images/nikoladze-wall.jpg"
+        text="{{ 'RIDDLES.STREET_ADDRESS_NIKO' | translate }}"
       >
       </app-people-card>
     </div>
 
-    <!-- (click)="navigateToMap('https://goo.gl/maps/hN3HfDokhEhm3Ppx7')" -->
-    <div class="riddle-card" [routerLink]="['/riddles/1smxVslZghiwqlsdmxz']">
-      <div class="question-mark">?</div>
+    <div
+      class="riddle-card"
+      (click)="navigate(PeopleEnum.MACHABELI,'https://goo.gl/maps/hN3HfDokhEhm3Ppx7')"
+    >
+      <div class="question-mark">2</div>
       <div class="check-mark" *ngIf="false"></div>
       <app-people-card
-        image="../../../assets/Images/street.png"
-        text="{{'RIDDLES.STREET_ADDRESS_SULKHAN_SABA_MACHABELI'|translate}}"
+        image="../../../assets/Images/machabeli-saba-wall.jpg"
+        text="{{ 'RIDDLES.STREET_ADDRESS_SULKHAN_SABA_MACHABELI' | translate }}"
       >
       </app-people-card>
     </div>
 
-    <!-- (click)="navigateToMap('https://goo.gl/maps/dBeisVa1SGzXiXbN7')" -->
-    <div class="riddle-card" [routerLink]="['/riddles/dxoqwjnJgiko9szxz22']" >
-      <div class="question-mark">?</div>
+    <div
+      class="riddle-card"
+      (click)="navigate(PeopleEnum.KAKABADZE,'https://goo.gl/maps/dBeisVa1SGzXiXbN7')"
+    >
+      <div class="question-mark">3</div>
       <div class="check-mark" *ngIf="false"></div>
       <app-people-card
-        image="../../../assets/Images/street.png"
-        text="{{'RIDDLES.STREET_ADDRESS_KAKABADZE'|translate}}"
+        image="../../../assets/Images/kakabadze-wall.jpg"
+        text="{{ 'RIDDLES.STREET_ADDRESS_KAKABADZE' | translate }}"
       >
       </app-people-card>
     </div>
 
-    <!-- (click)="navigateToMap('https://goo.gl/maps/GfywddoeHX7umEW49')" -->
-    <div class="riddle-card"  [routerLink]="['/riddles/XkZKuxiXbn1245684zv']" >
-      <div class="question-mark">?</div>
+    <div
+      class="riddle-card"
+      (click)="navigate(PeopleEnum.BARATAIA,'https://goo.gl/maps/GfywddoeHX7umEW49')"
+    >
+      <div class="question-mark">4</div>
       <div class="check-mark" *ngIf="false"></div>
       <app-people-card
-        image="../../../assets/Images/street.png"
-        text="{{'RIDDLES.STREET_ADDRESS_BARATAIA'|translate}}"
+        image="../../../assets/Images/barataia-wall.jpg"
+        text="{{ 'RIDDLES.STREET_ADDRESS_BARATAIA' | translate }}"
       >
       </app-people-card>
     </div>
 
-    <!-- (click)="navigateToMap('https://goo.gl/maps/JuwFSuyHv4S9axp36')" -->
-    <div class="riddle-card round" [routerLink]="['/riddles/xmxzGisKNBz25q6z30x']">
-      <div class="question-mark">?</div>
+    <div
+      class="riddle-card round"
+      (click)="navigate(PeopleEnum.MAZNIASHVILI,'https://goo.gl/maps/GacHJCuUoCX9THTw8')"
+    >
+      <div class="question-mark">5</div>
       <div class="check-mark" *ngIf="false"></div>
       <app-people-card
-        image="../../../assets/Images/street.png"
-        text="{{'RIDDLES.STREET_ADDRESS_MAZNIASHVILI'|translate}}"
+        image="../../../assets/Images/mazniashvili-wall.jpg"
+        text="{{ 'RIDDLES.STREET_ADDRESS_MAZNIASHVILI' | translate }}"
       >
       </app-people-card>
     </div>
-
   </div>
 </div>

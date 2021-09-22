@@ -1,1 +1,15 @@
-<p>sulkhan-machabeli-riddle works!</p>
+<div class="sulxan-machabeli-riddle-component" [formGroup]="form">
+  <h2 class="g-title">
+    <span class="primary-color">{{ "RIDDLES.FIRST" | translate }}</span>
+    {{ "RIDDLES.QUESTION" | translate }}
+  </h2>
+  <img src="../../../../assets/Images/question-mark.svg">
+  <div class="g-custom-input">
+    <input formControlName="answer" type="text" />
+  </div>
+  <div class="btns-wrapper">
+    <button (click)="submitAnswer()" [disabled]="form.invalid" class="g-custom-btn primary">
+      {{ "RIDDLES.ANSWER" | translate }}
+    </button>
+  </div>
+</div>

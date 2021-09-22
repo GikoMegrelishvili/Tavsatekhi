@@ -5,29 +5,12 @@
       <div class="icon correct"></div>
       <span>{{ "SHARED.ANSWER_CORRECT" | translate }}</span>
     </div>
-    <div class="text">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi
-        veniam officiis exercitationem, error debitis reprehenderit voluptatibus
-        excepturi animi ea nihil.
-      </p>
-    </div>
-    <!-- <div class="read-more-container">
-      <a>გიორგი მაზნიაშვილი</a>
-    </div> -->
   </div>
   <div class="incorrect container" *ngIf="!isAnswerCorrect">
     <div class="close" (click)="close()"></div>
     <div class="heading">
       <div class="icon incorrect"></div>
       <span>{{ "SHARED.ANSWER_INCORRECT" | translate }}</span>
-    </div>
-    <div class="text">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi
-        veniam officiis exercitationem, error debitis reprehenderit voluptatibus
-        excepturi animi ea nihil.
-      </p>
     </div>
   </div>
 </div>

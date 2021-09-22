@@ -25,6 +25,7 @@
         "GAME_INSTRUCTION_STEP_5":"Go and visit the other addresses and solve the riddles by carefully observing the paintings. While the only prize is bragging rights, the quest also provides information about Georgian public figures from the past, who, we think, have made significant contributions to the country’s development.We hope you enjoy the quest while wandering the streets of Tbilisi!"
     },
     "RIDDLES":{
+        "TITLE":"Riddles",
         "STREET_ADDRESS_NIKO":"Mazniashvili st.23",
         "STREET_ADDRESS_SULKHAN_SABA_MACHABELI":"G.Dolidze st.18",
         "STREET_ADDRESS_KAKABADZE":"Amagleba st.25",
@@ -46,33 +47,42 @@
         "TITLE":"People",
         "READ_MORE":"Read more",
         "DAVID_KAKABADZE":{
+            "NAME":"David Kakabadze",
             "PROFFESION":"Painter",
-            "DESCRIPTION":"(August 20, 1889 – May 10, 1952) was one of the leading Georgian avant-garde painter, graphic artist and scenic designer. A multi-talent, he was also an art scholar and innovator in the field of cinematography as well as an amateur photographer. Kakabadze's works are notable for combining innovative interpretation of European 'Leftist' art with Georgian national traditions, on which he was an expert"
+            "DESCRIPTION":"(August 20, 1889 – May 10, 1952) was one of the leading Georgian avant-garde painter, graphic artist and scenic designer. A multi-talent, he was also an art scholar and innovator in the field of cinematography as well as an amateur photographer. Kakabadze's works are notable for combining innovative interpretation of European 'Leftist' art with Georgian national traditions, on which he was an expert",
+            "QUOTE":"გამონათქვამი რაიმე ჭკვიანური დავით კაკაბაძეზე",
+            "P_1":""
         },
         "GIORGI_MAZNIASHVILI":{
+            "NAME":"Giorgi Mazniashvili",
             "PROFFESION":"General",
             "DESCRIPTION":"(6 April 1870 – 16 December 1937) was a Georgian general and one of the most prominent military figures in the Democratic Republic of Georgia (1918–1921). During the service in the Russian army, he was also known by a Russian transliteration of his surname – Mazniev"
         },
         "RAMZE_BARATAIA":{
+            "NAME":"Ramze Barataia",
             "PROFFESION":"Astronomer",
-            "DESCRIPTION":"დაიბადა მარტვილის რაიონის სოფ. ლეხაინდრაოში 1921წლის 25 ოქტომბერს. 1940  წელს დაამთავრა თბილისის პირველი საშუალო სკოლა და ჩაირიცხა თბილისის სახელმწიფო უნივერსიტეტის ფიზიკა-მათემატიკის ფაკულტეტზე"
+            "DESCRIPTION":"She was born in the district of Martvili, village Lekhaindrao in the year of 1921 on 25th of October. In 1940 she graduated from the 1st Secondary School of Tbilisi and started school at Tbilisi State University on the faculty of Physics and Math."
         },
         "NIKO_NIKOLADZE":{
+            "NAME":"Niko Nikoladze",
             "PROFFESION":"Public figure",
             "DESCRIPTION":" (27 September 1843 – 5 June 1928) was a notable Georgian writer, pro-Western enlightener, and public figure primarily known for his contributions to the development of Georgian liberal journalism and his involvement in various economic and social projects of that time"
         },
         "SULKHAN_SABA":{
+            "NAME":"Sulkhan-Saba Orbeliani",
             "PROFFESION":"Writer/Public figure",
             "DESCRIPTION":"Prince Sulkhan-Saba Orbeliani was a Georgian writer and diplomat. Orbeliani is noted in part due to his important role as an emissary of Georgia to France and the Vatican, where he vainly sought assistance on behalf of his beleaguered King Vakhtang V"
         },
         "IVANE_MACHABELI":{
+            "NAME":"Ivane Machabeli",
             "PROFFESION":"Writer/Translator",
             "DESCRIPTION":"Prince Ivane Machabeli was a Georgian writer, translator, publicist, public figure, active member of the National-Liberation Movement, and a founder of the new Georgian literary language. He is also well known for his resonant translations of Shakespeare and for writing the opera of 'The Knight in the Panther's Skin'"
         }
     },
     "ABOUT_US":{
       "TITLE":"About the project",
-      "ABOUT_PROJECT":"Our project combines street art and brain teasers, through which you will be able to get to know Georgian historical figures and artists in a fun way. After guessing the puzzles hidden in street art and entering the correct answers on this website, you will learn interesting facts about them and get hints to discover location of other similar street art paintings",
+      "ABOUT_PROJECT_1":"Our project combines street art and brain teasers, through which you will be able to get to know Georgian historical figures and artists in a fun way. After guessing the puzzles hidden in street art and entering the correct answers on this website, you will learn interesting facts about them and get hints to discover location of other similar street art paintings.",
+      "ABOUT_PROJECT_2":"This project is part of the international study ‘CHIEF’ on cultural education of young people, which is conducted in nine countries. More information about the CHIEF project can be found ",
       "HERE_LINK":"here",
       "PROJECT_FINANCE_TEXT":"This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 770464",
       "MEMBERS_TITLE":"Creators and participants of ‘Tavsatekhi’",
@@ -121,6 +131,6 @@
         "INSTRUCTION":"Instruction",
         "ABOUT_PROJECT":"About project",
         "ANSWER_CORRECT":"Answer correct",
-        "ANSWER_INCORRECT":"პასუხი არასწორია"
+        "ANSWER_INCORRECT":"Answer incorrect"
     }
 }

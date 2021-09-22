@@ -10,16 +10,16 @@
 }
 .tutorial-component {
   .game-info {
-    margin-bottom: 6em;
+    margin-bottom: 6rem;
   }
   .game-instruction {
     .instruction-box {
-      margin-bottom: 4em;
+      margin-bottom: 4rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 2em;
+      padding: 2rem;
       border: 1px solid $primary;
       border-radius: 25px;
       position: relative;
@@ -33,7 +33,7 @@
 
       .step {
         z-index: 3;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         width: 50px;
         height: 50px;
         border-radius: 100%;
@@ -44,8 +44,8 @@
         align-items: center;
         color: $secondary;
         font-weight: 500;
-        top: -1em;
-        left: -1em;
+        top: -1rem;
+        left: -1rem;
       }
     }
     @media only screen and (max-width: 600px) {

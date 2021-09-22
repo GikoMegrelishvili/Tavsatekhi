@@ -9,9 +9,9 @@
     align-items: center;
   }
   .braille-image-holder{
-    margin-left:1em;
+    margin-left:1rem;
     img{
-      height: 3em;
+      height: 3rem;
       width: auto;
     }
   }
@@ -19,11 +19,11 @@
     display: flex;
     justify-content: center;
     .g-custom-input {
-      margin:0 1em;
+      margin:0 1rem;
       input {
-        font-size: 1.2em;
-        width: 3em;
-        height: 3em;
+        font-size: 1.2rem;
+        width: 3rem;
+        height: 3rem;
         font-weight: 900;
         border: none;
         border-radius: 0;
@@ -33,14 +33,14 @@
     }
   }
   .btns-wrapper {
-    margin-top: 5em;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     .g-custom-btn {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       background-color: $primary;
-      width: 12em;
-      height: 3em;
+      width: 12rem;
+      height: 3rem;
     }
   }
 }

@@ -1,0 +1,34 @@
+@import "../../../../assets/variables/colors.scss";
+
+.sulxan-machabeli-riddle-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .primary-color {
+    color: $primary;
+  }
+  .g-custom-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    input {
+      padding: 1rem 0;
+      width: 100%;
+      max-width: 300px;
+      border: 3px solid $primary;
+      text-align: center;
+    }
+  }
+  .btns-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 100%;
+      max-width: 300px;
+      height: 4rem;
+    }
+  }
+}

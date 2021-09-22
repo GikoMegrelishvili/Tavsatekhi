@@ -1,10 +1,12 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { PeopleEnum } from 'src/app/shared/models/enums';
 import { AnswerService } from 'src/app/shared/services/answer.service';
 import { DialogService } from 'src/app/shared/services/dialog.service';
+import { RiddleService } from '../riddle.service';
 
 @Component({
   selector: 'app-niko-nikoladze-riddle',
@@ -19,12 +21,15 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
     private formBuilder: FormBuilder,
     public translateService: TranslateService,
     private answerService: AnswerService,
-    private dialogService: DialogService
+    private dialogService: DialogService,
+    private _riddleService:RiddleService,
+    private _router:Router
   ) {}
 
   ngOnInit(): void {
     this.currentLanguage = this.translateService.currentLang;
     this.initializeForm();
+    this._riddleService.markRiddleAsVisited(PeopleEnum.NIKOLADZE);
   }
   private initializeForm(): void {
     this.form = this.formBuilder.group({
@@ -56,7 +61,8 @@ export class NikoNikoladzeRiddleComponent implements OnInit {
 
   private handleAnswerDialog(isAnswerTrue):void{
     if(isAnswerTrue){
-      this.dialogService.openDialogAnswerCorrect(PeopleEnum.NIKOLADZE);
+      this.dialogService.openDialogAnswerCorrect();
+      this._router.navigateByUrl("people/niko-nikoladze");
     }else{
       this.dialogService.openDialogAnswerIncorrect();
     }

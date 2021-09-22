@@ -1,0 +1,50 @@
+@import "../../../assets/variables/colors.scss";
+
+.people-details-component {
+  .title-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .title {
+      font-size: 2rem;
+      padding:0 1rem;
+      text-align: left;
+      background-color: $base;
+      color: white;
+      width: 50%;
+      height: 80px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title-background {
+      width: 50%;
+      height: 80px;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  .g-subtitle {
+    margin: 1rem 0rem;
+  }
+  p {
+    color: $base;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  ul {
+    li {
+      margin: 0.5rem 0;
+      a {
+        color: $secondary;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: $primary;
+        }
+      }
+    }
+  }
+}

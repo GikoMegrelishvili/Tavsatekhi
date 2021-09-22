@@ -180,16 +180,17 @@ table {
 }
 .g-title {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 2.5em;
+  font-size: 2rem;
+  margin-bottom: 5rem;
   font-weight: 500;
+  color:$base;
 }
 .g-subtitle{
   font-style: italic;
   font-weight: 600;
-  font-size:1.2em;
+  font-size:1.2rem;
   color:$primary;
-  margin-bottom:1.5em;
+  margin-bottom:1.5rem;
 }
 //#region ღილაკის ლოადერები
 .g-loader-btn {
@@ -220,7 +221,7 @@ table {
     margin:0;
     border: 1px solid $base;
     border-radius: 10px;
-    height: 2em;
+    height: 2rem;
     &:focus {
       outline: none;
     }
@@ -229,8 +230,8 @@ table {
 .g-custom-btn {
   padding:10px;
   margin:0;
-  height: 2.5em;
-  font-size: 0.8em;
+  height: 2.5rem;
+  font-size: 0.8rem;
   color: white;
   border: none;
   outline: none;
